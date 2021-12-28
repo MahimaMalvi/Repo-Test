@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>JS-form</title>
+    
+</head>
+<body>
+    
+        <div class="form">
+        <form action="" name="personal_details" onsubmit= "return validate()">
+        <h2>Personal Details Section</h2>
+        <br>
+        <br>
+        <input type="text" name="firstname" id="firstname" onblur="validateString(this.id)" placeholder="First Name">
+        <br> <br> <br>
+        <input type="text" name="lastname" id="lastname" onblur="validateString(this.id)" placeholder="Last Name">
+        <br> <br> <br>
+        <input type="text" name="email" id="email" onblur="validateEmail(this.id)" placeholder="E-mail">
+        <br> <br> <br>
+        <input type="text" name="Mobile_no" id="Mobile_no" onblur="validateNumber(this.id)" max="10" placeholder="Mobile Number">
+        <br> <br> <br>
+        <input type="text" name="Address" placeholder="Address">
+        <br><br><br>
+       <b> Gender</b>
+       <br><br>
+       <input type="radio" name="gender" value="male" checked>Male
+       <input type="radio" name="gender" value="female" checked>Female
+       <input type="radio" name="gender" value="other" checked>Other
+       <br><br>
+       
+      <a href="welcome/welcome.html">
+        <input type="button" value="Submit" id="submit" onblur="submitFunction(this.id)">
+       </a>
+     <!---- <div class="box">
+        <input type="submit" value="Submit">
+    </div>-->
+       
+
+        
+
+
+    </form>
+    </div>
+    
+</body>
+</html>
